@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  margin: 0;
+  height: max-content;
+}
+
+@keyframes slide {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+
+@keyframes zoomin {
+  from {
+    max-width: 500px;
+  }
+  to {
+    max-width: 570px;
+  }
+}
+
+.all-container {
+  background: linear-gradient(
+    180deg,
+    rgb(231, 231, 231),
+    rgba(189, 189, 189, 0.877)
+  );
+}
+
+.header-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: rgba(0, 0, 0, 0.904);
+  box-shadow: 2px 3px 8px 0px rgba(0, 0, 0, 0.356);
+}
+.header-icon {
+  width: 24px;
+  height: 24px;
+  will-change: filter;
+  transition: filter 1s;
+}
+.header-icon:hover {
+  filter: drop-shadow(3px 3px 10px #ffffffc5);
+}
+
+.header-text {
+  color: rgba(255, 255, 255, 0.945);
+  font-weight: 400;
+  text-shadow: 1px 1px 7px rgba(197, 196, 196, 0.562);
+  animation-name: slide;
+  animation-duration: 1.2s;
+}
+
+.dest-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.dest1 {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 50px;
+  animation-name: slide;
+  animation-duration: 1.2s;
+}
+
+.dest1-img {
+  width: 135px;
+  height: 200px;
+  box-shadow: 2px 3px 8px 0px rgba(0, 0, 0, 0.356);
+}
+
+.location-cont {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.country {
+  margin: 0;
+  font-weight: 400;
+}
+
+.location-cont a {
+  padding-left: 10px;
+  color: rgb(88, 86, 92);
+}
+
+.location-title {
+  color: rgba(0, 0, 0, 0.89);
+  text-shadow: 1px 1px 7px rgb(255, 255, 255);
+}
+
+.dates {
+  display: flex;
+}
+
+.start-date,
+.end-date {
+  margin: 0;
+  padding-left: 5px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.89);
+}
+
+.description {
+  margin: 10px;
+  padding: 10px;
+  max-width: 500px;
+  max-height: 100px;
+  background-color: rgb(231, 228, 228);
+  box-shadow: 2px 3px 8px 0px rgba(0, 0, 0, 0.356);
+  border-radius: 20px;
+}
+
+.description:hover {
+  animation-name: zoomin;
+  animation-duration: 1s;
+}
