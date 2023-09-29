@@ -21,7 +21,7 @@ body {
 
 @keyframes zoomin {
   from {
-    max-width: 500px;
+    max-width: 520px;
   }
   to {
     max-width: 570px;
@@ -72,8 +72,6 @@ body {
   justify-content: center;
   gap: 20px;
   padding-top: 50px;
-  animation-name: slide;
-  animation-duration: 1.2s;
 }
 
 .dest1-img {
@@ -118,7 +116,7 @@ body {
 .description {
   margin: 10px;
   padding: 10px;
-  max-width: 500px;
+  max-width: 570px;
   max-height: 100px;
   background-color: rgb(231, 228, 228);
   box-shadow: 2px 3px 8px 0px rgba(0, 0, 0, 0.356);
